@@ -2,7 +2,7 @@
 echo start iprestore
 wait=$(/usr/local/bin/cfg_parser.py /etc/iprestore.cfg init wait)
 device=$(/usr/local/bin/cfg_parser.py /etc/iprestore.cfg init device)
-echo "lookkup for device ${device} for validity"
+echo "lookup for device ${device} for validity"
 echo "wait time is ${wait} seconds"
 echo run loop to check if ip is present
 while true
