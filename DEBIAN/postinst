@@ -1,0 +1,4 @@
+chmod 0766 /usr/local/bin/iprestore.sh
+chmod 0766 /usr/local/bin/cfg_parser.py
+systemctl daemon-reload
+systemctl restart iprestore
