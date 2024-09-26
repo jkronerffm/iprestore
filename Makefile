@@ -1,7 +1,8 @@
 Vers = 1.0
 Arch = all
 Pkg  = iprestore
-dir  = $(Pkg)_$(Vers)_$(Arch)
+pkgname = $(Pkg)_$(Vers)_$(Arch)
+dir  = $(pkgname)
 
 all: install
 
@@ -24,3 +25,4 @@ package:
 	sed -i -E "s/^Version: [0-9]+\.[0-9]/Version: ${Vers}/g" deb/$(dir)/DEBIAN/control
 	sed -i -E "s/^Architecture: .+/Architecture: ${Arch}/g" deb/$(dir)/DEBIAN/control
 	dpkg-deb --build ./deb/$(dir)/
+	dpkg-deb --info ./deb/$(pkgname).deb
