@@ -1,8 +1,8 @@
-Package: iprecover
+Package: iprestore
 Version: 0.0
 Architecture: all
 Essential: no
 Priority: optional
-Depends:
+Depends: python3
 Maintainer: Joerg Kroner
 Description: A service that maintains the ip address of this computer.
